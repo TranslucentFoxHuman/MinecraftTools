@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>minecrafttools_ja_JP.qm</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>minecrafttools.svg</file>
+    </qresource>
+</RCC>

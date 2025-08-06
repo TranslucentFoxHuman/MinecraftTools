@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="260"
+       y="220"
+       width="230"
+       height="210"
+       id="rect4" />
+  </defs>
+  <g
+     id="layer1">
+    <path
+       style="fill:#0068a0;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       d="M 250,30 30,120 v 260 l 220,90 220,-90 V 110 Z"
+       id="path1" />
+    <path
+       style="fill:#00a017;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72;fill-opacity:1"
+       d="M 250,30 30,120 250,210 470,110 Z"
+       id="path2" />
+    <path
+       style="fill:#a05900;fill-opacity:1;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       d="M 250,210 V 470 L 30,380 V 120 Z"
+       id="path3" />
+    <path
+       style="fill:#381f00;fill-opacity:1;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       d="M 250,210 V 470 L 470,380 V 110 Z"
+       id="path4" />
+    <text
+       xml:space="preserve"
+       id="text4"
+       style="font-size:85.3333px;font-family:'IBM Plex Sans JP';-inkscape-font-specification:'IBM Plex Sans JP';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#381f00;fill-opacity:1;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72" />
+    <path
+       d="m 311.26101,396.72525 -0.0833,5.49682 -50.58668,33.36385 0.34011,-8.29408 43.87126,-26.66684 0.0107,-0.57692 -42.1631,-14.67211 0.31896,-7.77821 z m 12.84646,29.23445 -5.03431,1.88787 17.28258,-58.27023 L 340,370 Z"
+       id="text5"
+       style="font-size:85.3333px;font-family:'IBM Plex Sans JP';-inkscape-font-specification:'IBM Plex Sans JP';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:14.9308;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       aria-label="&gt;/" />
+  </g>
+</svg>

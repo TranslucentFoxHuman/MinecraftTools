@@ -1,0 +1,10 @@
+[Desktop Entry]
+Comment[ja_JP]=Minecraftのためのいくつかのツールを備えたシンプルなアプリケーション
+Comment=A simple app which has various tools for playing Minecraft
+Exec=minecrafttools
+Icon=minecrafttools
+Name=MinecraftTools
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Game;

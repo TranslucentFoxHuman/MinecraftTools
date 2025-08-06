@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="Icon-Inkscape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.5644531"
+     inkscape:cx="249.92759"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="perspective-envelope"
+       up_left_point="263.64369,361.14428"
+       up_right_point="340,370"
+       down_left_point="260,450"
+       down_right_point="340,420"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1"
+       deform_type="perspective"
+       horizontal_mirror="false"
+       vertical_mirror="false"
+       overflow_perspective="false" />
+    <inkscape:path-effect
+       effect="envelope"
+       id="path-effect5"
+       is_visible="true"
+       lpeversion="1"
+       yy="true"
+       xx="true"
+       bendpath1="M 263.64369,361.14428 H 337.4304"
+       bendpath2="m 340,360 v 80"
+       bendpath3="M 263.64369,442.87226 H 337.4304"
+       bendpath4="m 263.64369,361.14428 v 81.72798"
+       bendpath2-nodetypes="cc" />
+    <rect
+       x="260"
+       y="220"
+       width="230"
+       height="210"
+       id="rect4" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#0068a0;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       d="M 250,30 30,120 v 260 l 220,90 220,-90 V 110 Z"
+       id="path1" />
+    <path
+       style="fill:#00a017;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72;fill-opacity:1"
+       d="M 250,30 30,120 250,210 470,110 Z"
+       id="path2" />
+    <path
+       style="fill:#a05900;fill-opacity:1;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       d="M 250,210 V 470 L 30,380 V 120 Z"
+       id="path3" />
+    <path
+       style="fill:#381f00;fill-opacity:1;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       d="M 250,210 V 470 L 470,380 V 110 Z"
+       id="path4" />
+    <text
+       xml:space="preserve"
+       id="text4"
+       style="font-size:85.3333px;font-family:'IBM Plex Sans JP';-inkscape-font-specification:'IBM Plex Sans JP';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#381f00;fill-opacity:1;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72" />
+    <path
+       d="m 311.26101,396.72525 -0.0833,5.49682 -50.58668,33.36385 0.34011,-8.29408 43.87126,-26.66684 0.0107,-0.57692 -42.1631,-14.67211 0.31896,-7.77821 z m 12.84646,29.23445 -5.03431,1.88787 17.28258,-58.27023 L 340,370 Z"
+       id="text5"
+       style="font-size:85.3333px;font-family:'IBM Plex Sans JP';-inkscape-font-specification:'IBM Plex Sans JP';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:14.9308;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.72"
+       aria-label="&gt;/"
+       inkscape:path-effect="#path-effect6"
+       inkscape:original-d="m 300,400 v 6.9853 l -36.35631,23.13879 v -7.42188 l 30.15921,-18.8603 v -0.69853 l -30.15921,-18.94762 v -7.33456 z m 14.79034,42.87226 h -5.94922 l 22.64008,-81.72798 h 5.9492 z" />
+  </g>
+</svg>
