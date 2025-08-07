@@ -4,15 +4,16 @@
 #include <QTranslator>
 #include <QObject>
 #include <QApplication>
+#include <QLocale>
 
 std::string minecraftWikiUrl;
-std::string versionString = "1.2";
+std::string versionString = "1.2.1";
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QTranslator ts;
-    if (std::string(setlocale(LC_ALL,NULL)) == "ja_JP.UTF-8" || std::string(setlocale(LC_ALL,NULL)) == "ja_JP.EUC-JP") {
+    if (QLocale::system().name().toStdString() == "ja_JP") {
         ts.load(":/translations/minecrafttools_ja_JP.qm");
         a.installTranslator(&ts);
     }
