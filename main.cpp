@@ -6,7 +6,7 @@
 #include <QApplication>
 
 std::string minecraftWikiUrl;
-std::string versionString = "1.0";
+std::string versionString = "1.1-dev";
 
 int main(int argc, char *argv[])
 {

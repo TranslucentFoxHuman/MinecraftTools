@@ -8,7 +8,18 @@
 #include <QString>
 #include <QDesktopServices>
 #include <QUrl>
+#include <QClipboard>
 
+
+std::string truncateZero(std::string base){
+    if (base.find_last_not_of('0') != std::string::npos) {
+        base.erase(base.find_last_not_of('0') + 1,base.length() - 1);
+    }
+    if (base.at(base.length()-1) == '.') {
+        base.erase(base.length());
+    }
+    return base;
+}
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -59,3 +70,56 @@ void MainWindow::on_actionAbout_triggered() {
     AboutDialog *abtdiag = new AboutDialog;
     abtdiag->exec();
 }
+
+
+// Horse Generator
+
+void MainWindow::GenerateHorse() {
+    int variant = 256 * ui->PatternCombo->currentIndex();
+    variant += ui->ColorCombo->currentIndex();
+    std::string speedStr = truncateZero(std::to_string(ui->SpeedDouble->value()));
+    std::string jumpStr = truncateZero(std::to_string(ui->JumpDouble->value()));
+    std::string output = "/summon horse ~ ~ ~ {attributes:[{id:\"max_health\",base:" + std::to_string(ui->StrengthNum->value()) + "},{id:\"movement_speed\",base:" + speedStr + "},{id:\"jump_strength\",base:" + jumpStr + "}],Variant:" + std::to_string(variant) + "}";
+    ui->MobGenOut->setPlainText(QString::fromStdString(output));
+}
+
+// * Allow Cheats
+void MainWindow::on_StrengthAllowCheat_toggled(bool checked) {
+    if(checked) {
+        ui->StrengthNum->setMaximum(60);
+    } else {
+        ui->StrengthNum->setMaximum(30);
+    }
+}
+void MainWindow::on_SpeedAllowCheat_toggled(bool checked) {
+    if (checked) {
+        ui->SpeedDouble->setMaximum(1.0);
+    } else {
+        ui->SpeedDouble->setMaximum(0.3375);
+    }
+}
+void MainWindow::on_JumpAllowCheat_toggled(bool checked) {
+    if (checked) {
+        ui->JumpDouble->setMaximum(100);
+    } else {
+        ui->JumpDouble->setMaximum(1.0);
+    }
+}
+
+
+void MainWindow::on_MobGenerateButton_clicked()
+{
+    switch (ui->MobType->currentIndex()) {
+        case 0:
+            MainWindow::GenerateHorse();
+        break;
+    }
+}
+
+
+void MainWindow::on_MobGenCopy_clicked()
+{
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    clipboard->setText(ui->MobGenOut->toPlainText());
+}
+

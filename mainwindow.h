@@ -32,7 +32,20 @@ private slots:
 
     void on_actionAbout_triggered();
 
+    void on_StrengthAllowCheat_toggled(bool checked);
+
+    void on_SpeedAllowCheat_toggled(bool checked);
+
+    void on_JumpAllowCheat_toggled(bool checked);
+
+    void on_MobGenerateButton_clicked();
+
+    void on_MobGenCopy_clicked();
+
 private:
     Ui::MainWindow *ui;
+
+    void GenerateHorse();
+
 };
 #endif // MAINWINDOW_H
