@@ -75,8 +75,9 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="234"/>
-        <source>Search</source>
-        <translation>検索</translation>
+        <source>&amp;Search</source>
+        <oldsource>Search</oldsource>
+        <translation>検索(&amp;S)</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="262"/>
@@ -204,13 +205,15 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="567"/>
-        <source>Copy</source>
-        <translation>コピー</translation>
+        <source>&amp;Copy</source>
+        <oldsource>Copy</oldsource>
+        <translation>コピー(&amp;C)</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="578"/>
-        <source>Generate</source>
-        <translation>生成</translation>
+        <source>&amp;Generate</source>
+        <oldsource>Generate</oldsource>
+        <translation>生成(&amp;G)</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="592"/>
@@ -219,18 +222,52 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="615"/>
-        <source>Application</source>
-        <translation>アプリケーション</translation>
+        <source>&amp;Application</source>
+        <oldsource>Application</oldsource>
+        <translation>アプリケーション(&amp;A)</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="629"/>
+        <location filename="mainwindow.ui" line="622"/>
+        <source>&amp;Tools</source>
+        <translation>ツール(&amp;T)</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="639"/>
+        <source>&amp;About</source>
+        <translation>このアプリケーションについて(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="648"/>
+        <source>E&amp;xit</source>
+        <translation>終了(&amp;X)</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="653"/>
+        <source>&amp;Coordinate</source>
+        <translation>座標(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="658"/>
+        <source>&amp;Wiki</source>
+        <translation>Wiki (&amp;W)</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="663"/>
+        <source>&amp;Mob Generator</source>
+        <translation>Mobジェネレーター(&amp;M)</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="668"/>
+        <source>M&amp;emo</source>
+        <translation>メモ(&amp;E)</translation>
+    </message>
+    <message>
         <source>About</source>
-        <translation>このアプリケーションについて</translation>
+        <translation type="vanished">このアプリケーションについて</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="638"/>
         <source>Exit</source>
-        <translation>終了</translation>
+        <translation type="vanished">終了</translation>
     </message>
 </context>
 <context>

@@ -44,6 +44,12 @@ private slots:
 
     void on_mainTab_currentChanged(int index);
 
+    //Tools menu actions
+    void on_actionCoordinate_triggered();
+    void on_actionWiki_triggered();
+    void on_actionMob_Generator_triggered();
+    void on_actionMemo_triggered();
+
 private:
     Ui::MainWindow *ui;
 

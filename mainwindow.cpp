@@ -56,6 +56,27 @@ void MainWindow::on_mainTab_currentChanged(int index)
 }
 
 
+// Menu Actions
+// *Application
+void MainWindow::on_actionAbout_triggered() {
+    AboutDialog *abtdiag = new AboutDialog;
+    abtdiag->exec();
+}
+
+// *Tools
+void MainWindow::on_actionCoordinate_triggered(){
+    ui->mainTab->setCurrentIndex(0);
+}
+void MainWindow::on_actionWiki_triggered(){
+    ui->mainTab->setCurrentIndex(1);
+}
+void MainWindow::on_actionMob_Generator_triggered(){
+    ui->mainTab->setCurrentIndex(2);
+}
+void MainWindow::on_actionMemo_triggered(){
+    ui->mainTab->setCurrentIndex(3);
+}
+
 
 
 
@@ -88,10 +109,6 @@ void MainWindow::on_WikiSearchText_returnPressed()
 }
 
 
-void MainWindow::on_actionAbout_triggered() {
-    AboutDialog *abtdiag = new AboutDialog;
-    abtdiag->exec();
-}
 
 
 // Horse Generator
