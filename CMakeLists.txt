@@ -23,6 +23,7 @@ set(PROJECT_SOURCES
         aboutdialog.cpp
         aboutdialog.h
         aboutdialog.ui
+        resources.qrc
         ${TS_FILES}
 )
 

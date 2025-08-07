@@ -83,19 +83,27 @@ void MainWindow::on_actionMemo_triggered(){
 // OverWorld and Nether coordinate converter
 void MainWindow::on_OverWorldX_textChanged(const QString &arg1)
 {
+    ui->NetherX->blockSignals(true);
     ui->NetherX->setValue(ui->OverWorldX->text().toInt() / 8);
+    ui->NetherX->blockSignals(false);
 }
 void MainWindow::on_OverWorldZ_textChanged(const QString &arg1)
 {
+    ui->NetherZ->blockSignals(true);
     ui->NetherZ->setValue(ui->OverWorldZ->text().toInt() / 8);
+    ui->NetherZ->blockSignals(false);
 }
 void MainWindow::on_NetherX_textChanged(const QString &arg1)
 {
+    ui->OverWorldX->blockSignals(true);
     ui->OverWorldX->setValue(ui->NetherX->text().toInt() * 8);
+    ui->OverWorldX->blockSignals(false);
 }
 void MainWindow::on_NetherZ_textChanged(const QString &arg1)
 {
+    ui->OverWorldZ->blockSignals(true);
     ui->OverWorldZ->setValue(ui->NetherZ->text().toInt() * 8);
+    ui->OverWorldZ->blockSignals(false);
 }
 
 
