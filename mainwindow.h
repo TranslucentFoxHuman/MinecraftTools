@@ -42,10 +42,14 @@ private slots:
 
     void on_MobGenCopy_clicked();
 
+    void on_mainTab_currentChanged(int index);
+
 private:
     Ui::MainWindow *ui;
 
     void GenerateHorse();
+    void HideMobGenAll();
+    void ShowMobGen();
 
 };
 #endif // MAINWINDOW_H

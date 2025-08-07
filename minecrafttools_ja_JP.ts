@@ -107,7 +107,7 @@
         <location filename="mainwindow.ui" line="321"/>
         <source>White</source>
         <comment>Pattern</comment>
-        <translation type="unfinished">白足と頭の線</translation>
+        <translation>白足と頭の線</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="326"/>
@@ -188,37 +188,47 @@
         <translation>跳躍力 :</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="522"/>
+        <location filename="mainwindow.ui" line="521"/>
+        <source>Tamed</source>
+        <translation>飼い慣らす</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="528"/>
+        <source>Has saddle</source>
+        <translation>鞍付き</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="540"/>
         <source>Output :</source>
         <translation>コマンド出力 :</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="549"/>
+        <location filename="mainwindow.ui" line="567"/>
         <source>Copy</source>
         <translation>コピー</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="556"/>
+        <location filename="mainwindow.ui" line="578"/>
         <source>Generate</source>
         <translation>生成</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="566"/>
+        <location filename="mainwindow.ui" line="592"/>
         <source>Memo</source>
         <translation>メモ</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="589"/>
+        <location filename="mainwindow.ui" line="615"/>
         <source>Application</source>
         <translation>アプリケーション</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="603"/>
+        <location filename="mainwindow.ui" line="629"/>
         <source>About</source>
         <translation>このアプリケーションについて</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="612"/>
+        <location filename="mainwindow.ui" line="638"/>
         <source>Exit</source>
         <translation>終了</translation>
     </message>

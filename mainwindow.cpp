@@ -37,6 +37,28 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::HideMobGenAll() {
+    ui->HorseGenWidget->hide();
+}
+void MainWindow::ShowMobGen() {
+    switch (ui->MobType->currentIndex()) {
+        case 0:
+            ui->HorseGenWidget->show();
+        break;
+    }
+}
+
+
+void MainWindow::on_mainTab_currentChanged(int index)
+{
+    HideMobGenAll();
+    ShowMobGen();
+}
+
+
+
+
+
 // OverWorld and Nether coordinate converter
 void MainWindow::on_OverWorldX_textChanged(const QString &arg1)
 {
@@ -79,7 +101,14 @@ void MainWindow::GenerateHorse() {
     variant += ui->ColorCombo->currentIndex();
     std::string speedStr = truncateZero(std::to_string(ui->SpeedDouble->value()));
     std::string jumpStr = truncateZero(std::to_string(ui->JumpDouble->value()));
-    std::string output = "/summon horse ~ ~ ~ {attributes:[{id:\"max_health\",base:" + std::to_string(ui->StrengthNum->value()) + "},{id:\"movement_speed\",base:" + speedStr + "},{id:\"jump_strength\",base:" + jumpStr + "}],Variant:" + std::to_string(variant) + "}";
+    std::string output = "/summon horse ~ ~ ~ {attributes:[{id:\"max_health\",base:" + std::to_string(ui->StrengthNum->value()) + "},{id:\"movement_speed\",base:" + speedStr + "},{id:\"jump_strength\",base:" + jumpStr + "}],Variant:" + std::to_string(variant);
+    if (ui->horseTamed->isChecked()) {
+        output = output + ",Tamed:true";
+    }
+    if (ui->HorseHasSaddle->isChecked()) {
+        output = output + ",equipment:{saddle:{id:\"saddle\",count:1}}";
+    }
+    output = output + "}";
     ui->MobGenOut->setPlainText(QString::fromStdString(output));
 }
 
@@ -122,4 +151,7 @@ void MainWindow::on_MobGenCopy_clicked()
     QClipboard *clipboard = QGuiApplication::clipboard();
     clipboard->setText(ui->MobGenOut->toPlainText());
 }
+
+
+
 
