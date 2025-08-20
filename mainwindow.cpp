@@ -16,7 +16,7 @@ std::string truncateZero(std::string base){
         base.erase(base.find_last_not_of('0') + 1,base.length() - 1);
     }
     if (base.at(base.length()-1) == '.') {
-        base.erase(base.length());
+        base.erase(base.length()-1);
     }
     return base;
 }
