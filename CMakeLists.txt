@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(minecrafttools VERSION 0.1 LANGUAGES CXX)
+project(minecrafttools VERSION 1.2.3 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
         aboutdialog.h
         aboutdialog.ui
         resources.qrc
+        globalvars.h
         ${TS_FILES}
 )
 
@@ -31,34 +32,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(minecrafttools
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
-        android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
     )
-# Define target properties for Android with Qt 6 as:
-    set_property(TARGET minecrafttools APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-                ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
-    if(ANDROID)
-        add_library(minecrafttools SHARED
+    add_executable(minecrafttools
             ${PROJECT_SOURCES}
-            android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(minecrafttools
-            ${PROJECT_SOURCES}
-            resources.qrc
-            globalvars.h
-            aboutdialog.h aboutdialog.cpp aboutdialog.ui
-        )
-    endif()
+    )
 endif()
 
 target_link_libraries(minecrafttools PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
@@ -67,8 +45,9 @@ target_link_libraries(minecrafttools PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.minecrafttools)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER net.tlfoxhuman.minecrafttools)
 endif()
+
 set_target_properties(minecrafttools PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
