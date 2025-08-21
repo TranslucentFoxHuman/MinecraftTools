@@ -15,7 +15,8 @@ SOURCES += \
 
 HEADERS += \
     mainwindow.h \
-    aboutdialog.h
+    aboutdialog.h \
+    globalvars.h
 
 FORMS += \
     mainwindow.ui \
