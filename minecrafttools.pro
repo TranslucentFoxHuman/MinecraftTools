@@ -1,3 +1,7 @@
+# MinecraftTools QMake build file
+# This file is used to build for Android platforms.
+# To build for Desktop platforms, use Cmake in CMakeLists.txt
+
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets

@@ -1,3 +1,7 @@
+# MinecraftTools CMake build file
+# This file is used to build for desktop platforms.
+# To build for Android platforms, use qmake in minecrafttools.pro
+
 cmake_minimum_required(VERSION 3.5)
 
 project(minecrafttools VERSION 1.2.3 LANGUAGES CXX)
