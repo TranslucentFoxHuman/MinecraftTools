@@ -1,5 +1,7 @@
 # 1.3.0
     Added villager generator.
+## 1.3.1
+    Fixed that the page at startup is Wiki
 
 # 1.2.0
     Added menus to change current tab.  
