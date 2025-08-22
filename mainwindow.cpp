@@ -177,7 +177,7 @@ void MainWindow::GenerateVillager() {
             type = "savanna";
             break;
         case 4:
-            type = "snowy";
+            type = "snow";
             break;
         case 5:
             type = "swamp";
@@ -199,9 +199,43 @@ void MainWindow::GenerateVillager() {
         case 3:
             profession = "cartographer";
             break;
+        case 4:
+            profession = "cleric";
+            break;
+        case 5:
+            profession = "farmer";
+            break;
+        case 6:
+            profession = "fisherman";
+            break;
+        case 7:
+            profession = "fletcher";
+            break;
+        case 8:
+            profession = "leatherworker";
+            break;
+        case 9:
+            profession = "librarian";
+            break;
+        case 10:
+            profession = "nitwit";
+            break;
+        case 11:
+            profession = "mason";
+            break;
+        case 12:
+            profession = "shepherd";
+            break;
+        case 13:
+            profession = "toolsmith";
+            break;
+        case 14:
+            profession = "weaponsmith";
+            break;
     }
 
-    std::string output = "/summon villager ~ ~ ~ {\"VillagerData:\"";
+    std::string output = "/summon villager ~ ~ ~ {\"VillagerData\":{\"type\":\"" + type + "\",\"profession\":\"" + profession + "\",\"level\":" + std::to_string(ui->vilLevelSpin->value()) + "}}";
+    ui->MobGenOut->setPlainText(QString::fromStdString(output));
 }
 
 
@@ -210,6 +244,7 @@ void MainWindow::on_MobGenerateButton_clicked()
     switch (ui->MobType->currentIndex()) {
         case 0:
             MainWindow::GenerateHorse();
+            break;
         case 1:
             MainWindow::GenerateVillager();
         break;

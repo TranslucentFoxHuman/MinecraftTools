@@ -22,7 +22,7 @@
     <item>
      <widget class="QTabWidget" name="mainTab">
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="coorTab">
        <attribute name="title">
@@ -31,9 +31,6 @@
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
@@ -163,9 +160,6 @@
         </item>
         <item>
          <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
@@ -183,9 +177,6 @@
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
          <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
@@ -196,23 +187,35 @@
         </item>
         <item>
          <widget class="QGroupBox" name="groupBox_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="title">
            <string>Open Minecraft Wiki</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
             <widget class="QLabel" name="MinecraftWikiLink">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="text">
               <string notr="true">PlaceHolder Text for Minecraft Wiki URL</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::TextFormat::RichText</enum>
+              <enum>Qt::PlainText</enum>
              </property>
              <property name="openExternalLinks">
               <bool>true</bool>
              </property>
              <property name="textInteractionFlags">
-              <set>Qt::TextInteractionFlag::LinksAccessibleByMouse|Qt::TextInteractionFlag::TextEditable|Qt::TextInteractionFlag::TextEditorInteraction|Qt::TextInteractionFlag::TextSelectableByKeyboard|Qt::TextInteractionFlag::TextSelectableByMouse</set>
+              <set>Qt::NoTextInteraction</set>
              </property>
             </widget>
            </item>
@@ -221,6 +224,12 @@
         </item>
         <item>
          <widget class="QGroupBox" name="groupBox_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="title">
            <string>Search at Minecraft Wiki</string>
           </property>
@@ -234,7 +243,8 @@
               <string>&amp;Search</string>
              </property>
              <property name="icon">
-              <iconset theme="edit-find"/>
+              <iconset theme="edit-find">
+               <normaloff>.</normaloff>.</iconset>
              </property>
             </widget>
            </item>
@@ -243,9 +253,6 @@
         </item>
         <item>
          <spacer name="verticalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Orientation::Vertical</enum>
-          </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
@@ -295,7 +302,7 @@
         <item>
          <widget class="QTabWidget" name="mobGenTab">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="horseMobGenTab">
            <attribute name="title">
@@ -708,7 +715,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QSpinBox" name="spinBox">
+                  <widget class="QSpinBox" name="vilLevelSpin">
                    <property name="minimum">
                     <number>1</number>
                    </property>
@@ -742,9 +749,6 @@
          <layout class="QHBoxLayout" name="horizontalLayout_9">
           <item>
            <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Orientation::Horizontal</enum>
-            </property>
             <property name="sizeHint" stdset="0">
              <size>
               <width>40</width>
@@ -759,7 +763,8 @@
              <string>&amp;Copy</string>
             </property>
             <property name="icon">
-             <iconset theme="edit-copy"/>
+             <iconset theme="edit-copy">
+              <normaloff>.</normaloff>.</iconset>
             </property>
            </widget>
           </item>
@@ -769,7 +774,8 @@
              <string>&amp;Generate</string>
             </property>
             <property name="icon">
-             <iconset theme="document-new"/>
+             <iconset theme="document-new">
+              <normaloff>.</normaloff>.</iconset>
             </property>
            </widget>
           </item>
@@ -797,7 +803,7 @@
      <x>0</x>
      <y>0</y>
      <width>500</width>
-     <height>24</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuApplication">
@@ -822,7 +828,8 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAbout">
    <property name="icon">
-    <iconset theme="dialog-information"/>
+    <iconset theme="dialog-information">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>&amp;About</string>
@@ -830,7 +837,8 @@
   </action>
   <action name="actionExit">
    <property name="icon">
-    <iconset theme="application-exit"/>
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
    </property>
    <property name="text">
     <string>E&amp;xit</string>
