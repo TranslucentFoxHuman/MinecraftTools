@@ -4,7 +4,6 @@
 #include "globalvars.h"
 
 #include <string>
-#include <iostream>
 #include <QString>
 #include <QDesktopServices>
 #include <QUrl>
@@ -160,12 +159,59 @@ void MainWindow::on_JumpAllowCheat_toggled(bool checked) {
     }
 }
 
+// Villager Generator
+void MainWindow::GenerateVillager() {
+    std::string type = "plains";
+    std::string profession = "unemployed";
+    switch(ui->vilTypeCombo->currentIndex()) {
+        case 0:
+            type = "plains";
+            break;
+        case 1:
+            type = "desert";
+            break;
+        case 2:
+            type = "jungle";
+            break;
+        case 3:
+            type = "savanna";
+            break;
+        case 4:
+            type = "snowy";
+            break;
+        case 5:
+            type = "swamp";
+            break;
+        case 6:
+            type = "taiga";
+            break;
+    }
+    switch(ui->vilProfcombo->currentIndex()){
+        case 0:
+            profession = "none";
+            break;
+        case 1:
+            profession = "armorer";
+            break;
+        case 2:
+            profession = "butcher";
+            break;
+        case 3:
+            profession = "cartographer";
+            break;
+    }
+
+    std::string output = "/summon villager ~ ~ ~ {\"VillagerData:\"";
+}
+
 
 void MainWindow::on_MobGenerateButton_clicked()
 {
     switch (ui->MobType->currentIndex()) {
         case 0:
             MainWindow::GenerateHorse();
+        case 1:
+            MainWindow::GenerateVillager();
         break;
     }
 }
@@ -179,4 +225,8 @@ void MainWindow::on_MobGenCopy_clicked()
 
 
 
+
+
+void MainWindow::on_mobGenTab_currentChanged(int index) { ui->MobType->setCurrentIndex(index);}
+void MainWindow::on_MobType_currentIndexChanged(int index){ ui->mobGenTab->setCurrentIndex(index);}
 

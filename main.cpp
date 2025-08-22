@@ -7,7 +7,8 @@
 #include <QLocale>
 
 std::string minecraftWikiUrl;
-std::string versionString = "1.2.3";
+std::string versionString = "1.3.0";
+int versionnumber = 7;
 
 int main(int argc, char *argv[])
 {

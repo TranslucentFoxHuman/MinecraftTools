@@ -50,10 +50,14 @@ private slots:
     void on_actionMob_Generator_triggered();
     void on_actionMemo_triggered();
 
+    void on_mobGenTab_currentChanged(int index);
+    void on_MobType_currentIndexChanged(int index);
+
 private:
     Ui::MainWindow *ui;
 
     void GenerateHorse();
+    void GenerateVillager();
     void HideMobGenAll();
     void ShowMobGen();
 
