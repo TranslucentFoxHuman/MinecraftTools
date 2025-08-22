@@ -1,3 +1,5 @@
+誰だ! README.mdをREADME_ja.mdに上書き保存したのは!! 折角元々日本語で書いてあったのにこれでは逆翻訳しなくてはならないではないか!!
+
 # MinecraftTools
 Copyright (C) 2025 TlFoxHuman (TranslucentFoxHuman, 半狐, 半透明狐人間)
 
